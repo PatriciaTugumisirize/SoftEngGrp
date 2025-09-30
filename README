@@ -1,0 +1,55 @@
+EduBridge Platform
+Project Overview
+
+EduBridge is a digital platform developed for BrightFutures Youth Center to address the challenge of youth unemployment and skill gaps in the city. The system connects young people with relevant internships, volunteer opportunities, and skill-building programs while helping organizations identify suitable candidates for their programs.
+
+The platform enables youth to create verified profiles, organizations to post structured opportunities, and administrators to oversee processes such as verification, reporting, and certification.
+
+Objectives
+
+Provide young people with access to verified opportunities.
+
+Allow organizations (companies, NGOs, training centers) to post opportunities with clear requirements.
+
+Match youth to opportunities based on skills, interests, and availability.
+
+Track applications, approvals, and completions.
+
+Generate digital certificates for successful participants.
+
+Enable administrators to ensure quality standards and reporting accuracy.
+
+Core Features
+
+User Profiles – Youth can create detailed accounts including education, skills, and availability.
+
+Opportunity Management – Organizations post opportunities with requirements, deadlines, and duration.
+
+Application System – Youth apply to opportunities; the platform manages application status.
+
+Matching Engine – Matches youth to opportunities based on skills and availability.
+
+Certification – Generates certificates for successful participants.
+
+Admin Oversight – Administrators verify profiles, approve opportunities, and generate reports.
+
+System Requirements
+
+Backend: PHP (with plans to migrate to Laravel)
+
+Database: PostgreSQL
+
+Frontend: HTML, CSS, JavaScript (simple prototype)
+
+Environment: Localhost (XAMPP/WAMP) or cloud-hosted PostgreSQL server
+
+Version Control: Git and GitHub
+
+Status
+
+Version: 1.0 (Prototype)
+
+Date: September 2025
+
+Status: Active Development
+
