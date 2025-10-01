@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "fullName": "Jane Doe",
+  "email": "jane@example.com",
+  "phone": "+254700123456",
+  "skills": ["Java", "Web Design", "Communication"],
+  "education": "Bachelor in IT",
+  "experience": "Internship at TechHub",
+  "certificates": [
+    {
+      "fileName": "certificate1.pdf",
+      "url": "/uploads/certificates/certificate1.pdf"
+    }
+  ],
+  "createdAt": "2025-10-01T12:00:00Z",
+  "updatedAt": "2025-10-01T13:00:00Z"
+}
