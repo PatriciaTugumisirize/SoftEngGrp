@@ -12,6 +12,7 @@
   <h1>Youth Profile | EduBridge</h1>
   <p>Fill in your details below:</p>
 
+  <div class = "container">
   <form id="profileForm">
     <label for="education">Course / Program:</label><br>
     <input type="text" id="education" name="education" placeholder="e.g. Bachelor of Commerce"><br><br>
@@ -27,13 +28,13 @@
     <button type="button" onclick="saveProfile()">Save Profile</button>
   </form>
 
-  <hr>
-  <h2>My Profile</h2>
   <div id="profilePreview">
+  <h2>My Profile</h2>
     <p><b>Course / Program:</b> <span id="displayEducation">Not set</span></p>
     <p><b>Skills:</b> <span id="displaySkills">Not set</span></p>
     <p><b>Interests:</b> <span id="displayInterests">Not set</span></p>
   </div>
+</div>
 
   <script src="profile.js"></script>
 </body>
