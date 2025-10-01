@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Profile | EduBridge</title>
+
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+
+<body>
+
+  <h1>Youth Profile | EduBridge</h1>
+  <p>Fill in your details below:</p>
+
+  
+  <form id="profileForm">
+    
+    <label for="education">Course / Program:</label><br>
+    <input type="text" id="education" name="education" placeholder="e.g. Bachelor of Commerce"><br><br>
+
+    
+    <label for="skills">Skills:</label><br>
+    <textarea id="skills" name="skills" placeholder="List your skills..."></textarea><br><br>
+
+  
+    <label for="interests">Interests:</label><br>
+    <input type="text" id="interests" name="interests" placeholder="e.g. Marketing"><br><br>
+
+    <button type="button" onclick="saveProfile()">Save Profile</button>
+  </form>
+
+  <hr>
+
+  
+  <h2>My Profile</h2>
+  <div id="profilePreview">
+    <p><b>Course / Program:</b> <span id="displayEducation">Not set</span></p>
+    <p><b>Skills:</b> <span id="displaySkills">Not set</span></p>
+    <p><b>Interests:</b> <span id="displayInterests">Not set</span></p>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
