@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opportunity — Create / Edit</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="formTitle">New Opportunity</h1>
+    <div>
+      <a href="index.html" class="btn">Back to list</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="oppForm" class="card" enctype="multipart/form-data" novalidate>
+      <input type="hidden" id="oppId" />
+      <div class="form-row">
+        <label>Title *</label>
+        <input id="title" required />
+        <small id="titleErr" class="err"></small>
+      </div>
+
+      <div class="form-row">
+        <label>Description</label>
+        <textarea id="description" rows="4"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label>Skills (comma-separated)</label>
+        <input id="skills" placeholder="e.g. HTML, CSS, communication" />
+      </div>
+
+      <div class="form-row split">
+        <div>
+          <label>Duration</label>
+          <input id="duration" />
+        </div>
+        <div>
+          <label>Deadline</label>
+          <input id="deadline" type="date" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Organization</label>
+        <select id="organization"></select>
+      </div>
+
+      <div class="form-row">
+        <label>Documents (optional, can choose multiple)</label>
+        <input id="documents" type="file" multiple />
+        <small class="muted">PDF, DOCX or images recommended.</small>
+      </div>
+
+      <div class="form-row actions">
+        <button id="saveBtn" class="btn primary">Save</button>
+        <button id="cancelBtn" type="button" class="btn">Cancel</button>
+      </div>
+
+      <div id="formMessage" class="message"></div>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script>
+    // initialize form page
+    window.addEventListener('DOMContentLoaded', () => {
+      App.initFormPage();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opportunities — List</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Opportunities</h1>
+    <div>
+      <a href="form.html" class="btn primary">New Opportunity</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="controls" class="controls">
+      <input id="search" placeholder="Search by title or skill..." />
+      <select id="orgFilter">
+        <option value="">All organizations</option>
+      </select>
+      <button id="reloadBtn" class="btn">Reload</button>
+    </section>
+
+    <section id="list" class="grid"></section>
+
+    <div id="empty" class="empty">No opportunities found.</div>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script>
+    // initialize list page
+    window.addEventListener('DOMContentLoaded', () => {
+      App.initListPage();
+    });
+  </script>
+</body>
+</html>
